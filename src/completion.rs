@@ -1,7 +1,9 @@
+/*
 use std::io;
-use std::mem;
-use std::ptr::{self, NonNull};
-use std::task::Waker;
+*/
+use core::ptr::{self, NonNull};
+use core::task::Waker;
+use core::mem;
 
 use parking_lot::Mutex;
 

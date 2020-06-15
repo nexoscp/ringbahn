@@ -1,6 +1,8 @@
+/*
 use std::os::unix::io::AsRawFd;
-use std::mem::ManuallyDrop;
-use std::marker::Unpin;
+*/
+use core::mem::ManuallyDrop;
+use core::marker::Unpin;
 
 use super::{Event, Cancellation};
 

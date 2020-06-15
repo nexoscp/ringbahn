@@ -1,5 +1,7 @@
-use std::mem::ManuallyDrop;
+/*
 use std::os::unix::io::RawFd;
+*/
+use core::mem::ManuallyDrop;
 
 use super::{Event, Cancellation};
 

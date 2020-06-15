@@ -1,15 +1,18 @@
 mod listener;
 mod stream;
-
+/*
 use std::alloc::{alloc, Layout};
 use std::io;
-use std::mem;
 use std::net::{SocketAddr, ToSocketAddrs};
 use std::os::unix::io::RawFd;
-use std::ptr;
+*/
+use core::mem;
+use core::ptr;
+use core::alloc::Layout;
 
 pub use listener::{TcpListener, Accept, Close, Incoming};
 pub use stream::{TcpStream, Connect};
+
 
 fn socket<A: ToSocketAddrs>(addr: A) -> io::Result<(RawFd, SocketAddr)> {
     use io::{Error, ErrorKind};

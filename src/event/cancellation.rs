@@ -1,4 +1,4 @@
-use std::ptr;
+use core::ptr;
 
 /// A cancellation callback when IO gets cancelled.
 ///

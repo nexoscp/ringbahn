@@ -1,19 +1,21 @@
+/*
 use std::alloc::{alloc, dealloc, Layout};
 use std::io;
-use std::future::Future;
-use std::mem;
 use std::net::{SocketAddr, ToSocketAddrs};
 use std::os::unix::io::{RawFd};
-use std::pin::Pin;
-use std::ptr;
-use std::task::{Context, Poll};
+*/
+use core::pin::Pin;
+use core::{mem, ptr};
+use core::future::Future;
+use core::alloc::Layout;
+
+use core::task::{Context, Poll};
 
 use futures_core::{ready, Stream};
-
 use crate::drive::demo::DemoDriver;
 use crate::event::Cancellation;
-use crate::{Drive, Ring};
 
+use crate::{Drive, Ring};
 use super::{TcpStream, addr_from_c, addr_to_c, socket};
 
 pub struct TcpListener<D: Drive = DemoDriver<'static>> {

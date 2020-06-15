@@ -1,3 +1,4 @@
+#![no_std]
 pub mod fs;
 pub mod drive;
 pub mod event;

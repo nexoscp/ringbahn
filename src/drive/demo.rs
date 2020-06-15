@@ -1,10 +1,11 @@
 //! A demo driver for experimentation purposes
-
-use std::future::Future;
+/*
 use std::io;
-use std::pin::Pin;
-use std::task::{Poll, Context};
 use std::thread;
+*/
+use core::future::Future;
+use core::pin::Pin;
+use core::task::{Poll, Context};
 
 use futures_core::ready;
 use once_cell::sync::Lazy;

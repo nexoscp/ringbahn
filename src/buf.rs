@@ -1,13 +1,15 @@
+/*
 use std::alloc::{alloc, dealloc, handle_alloc_error, Layout};
 use std::io;
-use std::cmp;
-use std::mem;
-use std::ptr::NonNull;
-use std::slice;
-use std::task::Poll;
+*/
+use core::task::Poll;
+use core::{mem, slice, cmp};
+use core::ptr::NonNull;
+use core::alloc::Layout;
 
 use futures_core::ready;
 use crate::event::Cancellation;
+
 
 pub struct Buffer {
     data: NonNull<()>,

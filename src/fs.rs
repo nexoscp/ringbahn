@@ -1,13 +1,14 @@
 //! Interact with the file system using io-uring
-
+/*
 use std::fs;
-use std::future::Future;
 use std::io;
-use std::mem::ManuallyDrop;
 use std::os::unix::io::{AsRawFd, FromRawFd, RawFd};
 use std::path::Path;
-use std::pin::Pin;
-use std::task::{Context, Poll};
+*/
+use core::pin::Pin;
+use core::future::Future;
+use core::mem::ManuallyDrop;
+use core::task::{Context, Poll};
 
 use futures_core::ready;
 use futures_io::{AsyncRead, AsyncBufRead, AsyncWrite, AsyncSeek};

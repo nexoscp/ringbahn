@@ -1,7 +1,10 @@
+/*
 use std::alloc::{dealloc, Layout};
 use std::os::unix::io::RawFd;
-use std::mem::ManuallyDrop;
 use std::net::SocketAddr;
+*/
+use core::mem::ManuallyDrop;
+use core::alloc::Layout;
 
 use super::{Event, Cancellation};
 

@@ -1,9 +1,11 @@
+/*
 use std::io;
-use std::future::Future;
 use std::net::ToSocketAddrs;
 use std::os::unix::io::RawFd;
-use std::pin::Pin;
-use std::task::{Context, Poll};
+*/
+use core::pin::Pin;
+use core::future::Future;
+use core::task::{Context, Poll};
 
 use futures_core::ready;
 use futures_io::{AsyncRead, AsyncBufRead, AsyncWrite};

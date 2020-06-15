@@ -6,9 +6,10 @@ mod close;
 mod read;
 mod openat;
 mod write;
-
+/*
 use std::marker::Unpin;
-use std::mem::ManuallyDrop;
+*/
+use core::mem::ManuallyDrop;
 
 pub use cancellation::Cancellation;
 
