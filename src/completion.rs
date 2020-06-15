@@ -1,11 +1,12 @@
+extern crate alloc;
+
 // use std::io;
 use crate::io;
 use core::ptr::{self, NonNull};
 use core::task::Waker;
 use core::mem;
-
+use alloc::boxed::Box;
 use parking_lot::Mutex;
-
 use crate::event::Cancellation;
 
 pub struct Completion {

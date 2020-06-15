@@ -1,16 +1,14 @@
-/*
-use std::alloc::{alloc, dealloc, handle_alloc_error, Layout};
-*/
+extern crate alloc;
+
+use alloc::alloc::{alloc, dealloc, handle_alloc_error};
 // use std::io;
 use crate::io;
 use core::task::Poll;
 use core::{mem, slice, cmp};
 use core::ptr::NonNull;
 use core::alloc::Layout;
-
 use futures_core::ready;
 use crate::event::Cancellation;
-
 
 pub struct Buffer {
     data: NonNull<()>,

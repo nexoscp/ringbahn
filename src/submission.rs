@@ -4,13 +4,10 @@ use core::mem::{self, ManuallyDrop};
 use core::pin::Pin;
 use core::future::Future;
 use core::task::{Context, Poll};
-
 use futures_core::ready;
-
 use crate::{Event, Drive};
 use crate::completion::Completion;
 use crate::drive::Completion as ExternalCompletion;
-
 
 /// A [`Future`] representing an event submitted to io-uring
 pub struct Submission<E: Event, D> {

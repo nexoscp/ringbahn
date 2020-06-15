@@ -1,8 +1,11 @@
 /*
-use std::alloc::{dealloc, Layout};
 use std::os::unix::io::RawFd;
 use std::net::SocketAddr;
 */
+extern crate alloc;
+
+use alloc::boxed::Box;
+use alloc::alloc::dealloc;
 use core::mem::ManuallyDrop;
 use core::alloc::Layout;
 
