@@ -2,9 +2,8 @@
 
 pub mod demo;
 
-/*
-use std::io;
-*/
+// use std::io;
+use crate::io;
 use core::pin::Pin;
 use core::task::{Context, Poll};
 use core::marker::PhantomData;
@@ -12,6 +11,7 @@ use core::marker::PhantomData;
 use crate::completion;
 
 pub use crate::completion::complete;
+
 
 /// A ccompletion which will be used to wake the task waiting on this event.
 ///

@@ -1,10 +1,11 @@
 //! Interact with the file system using io-uring
 /*
 use std::fs;
-use std::io;
 use std::os::unix::io::{AsRawFd, FromRawFd, RawFd};
 use std::path::Path;
 */
+// use std::io;
+use crate::io;
 use core::pin::Pin;
 use core::future::Future;
 use core::mem::ManuallyDrop;

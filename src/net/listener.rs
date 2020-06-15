@@ -1,9 +1,10 @@
 /*
 use std::alloc::{alloc, dealloc, Layout};
-use std::io;
 use std::net::{SocketAddr, ToSocketAddrs};
 use std::os::unix::io::{RawFd};
 */
+// use std::io;
+use crate::io;
 use core::pin::Pin;
 use core::{mem, ptr};
 use core::future::Future;

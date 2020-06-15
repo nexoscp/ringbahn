@@ -1,6 +1,5 @@
-/*
-use std::io;
-*/
+// use std::io;
+use crate::io;
 use core::mem::{self, ManuallyDrop};
 use core::pin::Pin;
 use core::future::Future;

@@ -1,7 +1,8 @@
 /*
 use std::alloc::{alloc, dealloc, handle_alloc_error, Layout};
-use std::io;
 */
+// use std::io;
+use crate::io;
 use core::task::Poll;
 use core::{mem, slice, cmp};
 use core::ptr::NonNull;

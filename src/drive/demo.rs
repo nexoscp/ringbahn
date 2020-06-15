@@ -1,8 +1,9 @@
 //! A demo driver for experimentation purposes
 /*
-use std::io;
 use std::thread;
 */
+// use std::io;
+use crate::io;
 use core::future::Future;
 use core::pin::Pin;
 use core::task::{Poll, Context};

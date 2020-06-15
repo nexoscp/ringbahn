@@ -1,6 +1,5 @@
-/*
-use std::io;
-*/
+// use std::io;
+use crate::io;
 use core::pin::Pin;
 use core::task::{Context, Poll};
 

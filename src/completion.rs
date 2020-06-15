@@ -1,6 +1,5 @@
-/*
-use std::io;
-*/
+// use std::io;
+use crate::io;
 use core::ptr::{self, NonNull};
 use core::task::Waker;
 use core::mem;

@@ -3,6 +3,7 @@ pub mod fs;
 pub mod drive;
 pub mod event;
 pub mod net;
+pub mod io;
 
 mod buf;
 mod completion;
