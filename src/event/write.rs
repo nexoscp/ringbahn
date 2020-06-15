@@ -1,9 +1,7 @@
-/*
-use std::os::unix::io::AsRawFd;
-*/
 use core::mem::ManuallyDrop;
 use core::marker::Unpin;
-
+// use std::os::unix::io::AsRawFd;
+use crate::linux::io::AsRawFd;
 use super::{Event, Cancellation};
 
 /// A basic write event.

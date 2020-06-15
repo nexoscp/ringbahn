@@ -1,10 +1,9 @@
-/*
-use std::os::unix::io::AsRawFd;
-*/
 use core::mem::ManuallyDrop;
 use core::marker::Unpin;
 
 use super::{Event, Cancellation};
+// use std::os::unix::io::AsRawFd;
+use crate::linux::io::AsRawFd;
 
 /// A basic read event.
 pub struct Read<'a, T> {

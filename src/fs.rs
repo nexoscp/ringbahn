@@ -1,7 +1,7 @@
 //! Interact with the file system using io-uring
 /*
 use std::fs;
-use std::os::unix::io::{AsRawFd, FromRawFd};
+use std::os::unix::io::{FromRawFd};
 use std::path::Path;
 */
 // use std::io;
@@ -12,6 +12,8 @@ use core::mem::ManuallyDrop;
 use core::task::{Context, Poll};
 //use std::os::unix::io::RawFd;
 use crate::linux::io::RawFd;
+// use std::os::unix::io::AsRawFd;
+use crate::linux::io::AsRawFd;
 
 use futures_core::ready;
 use futures_io::{AsyncRead, AsyncBufRead, AsyncWrite, AsyncSeek};
