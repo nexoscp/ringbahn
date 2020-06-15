@@ -10,6 +10,11 @@ pub mod io {
     pub trait AsRawFd {
         fn as_raw_fd(&self) -> RawFd;
     }
+
+    // see libstd/sys/unix/ext/io.rs
+    /* pub trait FromRawFd {
+        unsafe fn from_raw_fd(fd: RawFd) -> Self;
+    } */
 }
 
 //replace libstd/os/raw/mod.rs
