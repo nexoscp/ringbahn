@@ -1,6 +1,5 @@
 /*
 use std::net::{SocketAddr, ToSocketAddrs};
-use std::os::unix::io::{RawFd};
 */
 extern crate alloc;
 // use std::io;
@@ -16,6 +15,8 @@ use crate::drive::demo::DemoDriver;
 use crate::event::Cancellation;
 use crate::{Drive, Ring};
 use super::{TcpStream, addr_from_c, addr_to_c, socket};
+//use std::os::unix::io::RawFd;
+use crate::linux::io::RawFd;
 
 pub struct TcpListener<D: Drive = DemoDriver<'static>> {
     ring: Ring<D>,

@@ -2,7 +2,6 @@ mod listener;
 mod stream;
 /*
 use std::net::{SocketAddr, ToSocketAddrs};
-use std::os::unix::io::RawFd;
 */
 extern crate alloc;
 // use std::io;
@@ -12,6 +11,8 @@ use core::ptr;
 use core::alloc::Layout;
 use alloc::boxed::Box;
 use alloc::alloc::alloc;
+//use std::os::unix::io::RawFd;
+use crate::linux::io::RawFd;
 
 pub use listener::{TcpListener, Accept, Close, Incoming};
 pub use stream::{TcpStream, Connect};

@@ -4,6 +4,7 @@ pub mod drive;
 pub mod event;
 pub mod net;
 pub mod io;
+pub mod linux;
 
 mod buf;
 mod completion;

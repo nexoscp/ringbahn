@@ -1,9 +1,8 @@
-/*
-use std::os::unix::io::RawFd;
-*/
 use core::mem::ManuallyDrop;
 
 use super::{Event, Cancellation};
+//use std::os::unix::io::RawFd;
+use crate::linux::io::RawFd;
 
 pub struct Close {
     fd: RawFd,

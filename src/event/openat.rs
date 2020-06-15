@@ -1,10 +1,11 @@
 /*
 use std::ffi::CString;
-use std::os::unix::io::RawFd;
 use std::os::unix::ffi::OsStrExt;
 use std::path::Path;
 */
 use core::mem::ManuallyDrop;
+//use std::os::unix::io::RawFd;
+use crate::linux::io::RawFd;
 
 use super::{Event, Cancellation};
 
